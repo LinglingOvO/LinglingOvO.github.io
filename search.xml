@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Hello World</title>
+      <link href="/2025/02/13/hello-world/"/>
+      <url>/2025/02/13/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your veryfirst post. Check <a href="https://hexo.io/docs/">documentation</a> formore info. If you get any problems when using Hexo, you can find theanswer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> oryou can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><blockquote><p>提示：如果事情没有按预期出现，请仔细检查你是否已将列表中的元素缩进了四个空格或一个制表符。</p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hello </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Markdown 语法学习</title>
       <link href="/2025/02/12/Markdown%20%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
       <url>/2025/02/12/Markdown%20%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
@@ -21,25 +40,6 @@
         <tags>
             
             <tag> Markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2025/02/10/hello-world/"/>
-      <url>/2025/02/10/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your veryfirst post. Check <a href="https://hexo.io/docs/">documentation</a> formore info. If you get any problems when using Hexo, you can find theanswer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> oryou can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><blockquote><p>提示：如果事情没有按预期出现，请仔细检查你是否已将列表中的元素缩进了四个空格或一个制表符。</p></blockquote>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> hello </tag>
             
         </tags>
       
