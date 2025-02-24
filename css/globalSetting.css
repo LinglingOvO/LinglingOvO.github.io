@@ -2,12 +2,12 @@
   background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);
 } */
 
-/*菜单栏中选项字体大小的设置*/
+/* 菜单栏中选项字体大小的设置 */
 #nav .site-page {
   font-size: 0.9em;
 }
 
-/*个人卡片中的社交图标间距设置*/
+/* 个人卡片中的社交图标间距设置 */
 #aside-content .card-widget .card-info-social-icons .social-icon i,
 #aside-content .card-widget .card-info-social-icons .social-icon svg {
   background: transparent;
@@ -18,12 +18,17 @@
   display: -webkit-box;
 }
 
-/*侧边栏中的公告图标间距设置*/
+/* 侧边栏中的公告图标间距设置 */
 #aside-content .item-headline {
   margin-left: 0px;
 }
 
-/*侧边栏中的网站资讯信息显示*/
+/* 侧边栏中的网站资讯信息显示 */
 #aside-content .card-webinfo .item-headline {
   display: flex;
+}
+
+/* 分类页面的背景设置 */
+[data-theme="dark"] div#tag {
+  background: transparent;
 }
