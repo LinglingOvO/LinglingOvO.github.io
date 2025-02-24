@@ -48,6 +48,7 @@
   top: 32px;
 }
 
+/* 关闭右键菜单中简繁切换按钮的显示  */
 #rightMenu .rightMenu-group.rightMenu-line #menu-translate {
   display: none;
 }
