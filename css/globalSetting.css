@@ -47,3 +47,7 @@
 #aside-content .card-widget .author-info__description {
   top: 32px;
 }
+
+#rightMenu .rightMenu-group.rightMenu-line #menu-translate {
+  display: none;
+}
