@@ -77,43 +77,21 @@
     
     <entry>
       <title></title>
+      <link href="/css/authorCardColor.css"/>
+      <url>/css/authorCardColor.css</url>
+      
+        <content type="html"><![CDATA[/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(255, 255, 255);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;  --anzhiyu-main-op-deep: ; /*这里是额外加的*/}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/authorAvatar.css"/>
       <url>/css/authorAvatar.css</url>
       
         <content type="html"><![CDATA[/* 头像呼吸灯 */[data-theme="light"] .avatar-img {  animation: huxi_light 4s ease-in-out infinite;}[data-theme="dark"] .avatar-img {  animation: huxi_dark 4s ease-in-out infinite;}@keyframes huxi_light {  0% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }  50% {    box-shadow: 0px 0px 5px 5px #e9f5fa;  }  100% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }}@keyframes huxi_dark {  0% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }  50% {    box-shadow: 0px 0px 5px 5px #39c5bb;  }  100% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/globalSetting.css"/>
-      <url>/css/globalSetting.css</url>
-      
-        <content type="html"><![CDATA[/* #web_bg {  background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);} *//* 菜单栏中选项字体大小的设置 */#nav .site-page {  font-size: 0.9em;}/* 个人卡片中的社交图标间距设置 */#aside-content .card-widget .card-info-social-icons .social-icon i,#aside-content .card-widget .card-info-social-icons .social-icon svg {  background: transparent;  border-radius: 14px;  padding: 6px;}#aside-content .card-widget .author-info__bottom-group {  display: -webkit-box;}/* 侧边栏中的公告图标间距设置 */#aside-content .item-headline {  margin-left: 0px;}/* 侧边栏中的网站资讯信息显示 */#aside-content .card-webinfo .item-headline {  display: flex;}/* 分类页面的背景设置 */[data-theme="dark"] div#tag {  background: transparent;}/* 减小头像的 “下巴”  */#aside-content > .card-widget.card-info > .card-content {  min-height: 200px;}/* 减小头像的 “上巴”  */#aside-content .card-info .author-info-avatar {  margin: 36px auto;}/* 减小头像中描述的 “上巴”  */#aside-content .card-widget .author-info__description {  top: 32px;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/pageCard.css"/>
-      <url>/css/pageCard.css</url>
-      
-        <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.7);  --trans-dark: rgba(25, 25, 25, 0.65);  --border-style: 1px solid rgb(82, 82, 82);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}]]></content>
       
     </entry>
     
@@ -132,10 +110,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/authorCardColor.css"/>
-      <url>/css/authorCardColor.css</url>
+      <link href="/css/pageCard.css"/>
+      <url>/css/pageCard.css</url>
       
-        <content type="html"><![CDATA[/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(255, 255, 255);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;  --anzhiyu-main-op-deep: ; /*这里是额外加的*/}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}]]></content>
+        <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.7);  --trans-dark: rgba(25, 25, 25, 0.65);  --border-style: 1px solid rgb(82, 82, 82);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}]]></content>
       
     </entry>
     
@@ -154,6 +132,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/globalSetting.css"/>
+      <url>/css/globalSetting.css</url>
+      
+        <content type="html"><![CDATA[/* #web_bg {  background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);} *//* 菜单栏中选项字体大小的设置 */#nav .site-page {  font-size: 0.9em;}/* 个人卡片中的社交图标间距设置 */#aside-content .card-widget .card-info-social-icons .social-icon i,#aside-content .card-widget .card-info-social-icons .social-icon svg {  background: transparent;  border-radius: 14px;  padding: 6px;}#aside-content .card-widget .author-info__bottom-group {  display: -webkit-box;}/* 侧边栏中的公告图标间距设置 */#aside-content .item-headline {  margin-left: 0px;}/* 侧边栏中的网站资讯信息显示 */#aside-content .card-webinfo .item-headline {  display: flex;}/* 分类页面的背景设置 */[data-theme="dark"] div#tag {  background: transparent;}/* 减小头像的 “下巴”  */#aside-content > .card-widget.card-info > .card-content {  min-height: 200px;}/* 减小头像的 “上巴”  */#aside-content .card-info .author-info-avatar {  margin: 36px auto;}/* 减小头像中描述的 “上巴”  */#aside-content .card-widget .author-info__description {  top: 32px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/windmill.css"/>
       <url>/css/windmill.css</url>
       
@@ -164,9 +153,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -187,6 +176,17 @@
     
     <entry>
       <title></title>
+      <link href="/theSite/index.html"/>
+      <url>/theSite/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/js/myConsole.js"/>
       <url>/js/myConsole.js</url>
       
@@ -197,9 +197,9 @@
     
     
     <entry>
-      <title></title>
-      <link href="/theSite/index.html"/>
-      <url>/theSite/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
