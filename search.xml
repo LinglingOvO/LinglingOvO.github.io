@@ -76,6 +76,28 @@
     
     
     <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/globalSetting.css"/>
+      <url>/css/globalSetting.css</url>
+      
+        <content type="html"><![CDATA[/* #web_bg {  background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);} *//*菜单栏中选项字体大小的设置*/#nav .site-page {  font-size: 0.9em;}/*个人卡片中的社交图标间距设置*/#aside-content .card-widget .card-info-social-icons .social-icon i,#aside-content .card-widget .card-info-social-icons .social-icon svg {  background: transparent;  border-radius: 14px;  padding: 6px;}#aside-content .card-widget .author-info__bottom-group {  display: -webkit-box;}/*侧边栏中的公告图标间距设置*/#aside-content .item-headline {  margin-left: 0px;}#aside-content .card-webinfo .item-headline {  display: flex;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/css/neon.css"/>
       <url>/css/neon.css</url>
@@ -88,10 +110,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/globalSetting.css"/>
-      <url>/css/globalSetting.css</url>
+      <link href="/css/pageCard.css"/>
+      <url>/css/pageCard.css</url>
       
-        <content type="html"><![CDATA[/* #web_bg {  background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);} *//*菜单栏中选项字体大小的设置*/#nav .site-page {  font-size: 0.9em;}/*个人卡片中的社交图标间距设置*/#aside-content .card-widget .card-info-social-icons .social-icon i,#aside-content .card-widget .card-info-social-icons .social-icon svg {  background: transparent;  border-radius: 14px;  padding: 6px;}#aside-content .card-widget .author-info__bottom-group {  display: -webkit-box;}/*侧边栏中的公告图标间距设置*/#aside-content .item-headline {  margin-left: -2px;}]]></content>
+        <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.7);  --trans-dark: rgba(25, 25, 25, 0.65);  --border-style: 1px solid rgb(82, 82, 82);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}]]></content>
       
     </entry>
     
@@ -110,17 +132,6 @@
     
     <entry>
       <title></title>
-      <link href="/css/windmill.css"/>
-      <url>/css/windmill.css</url>
-      
-        <content type="html"><![CDATA[/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}.fontawesomeIcon,hr:before,#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before,#post .post-outdate-notice:before,.note:not(.no-icon)::before {  display: inline-block;  font-weight: 600;  font-family: "Font Awesome 6 Free";  text-rendering: auto;  -webkit-font-smoothing: antialiased;}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: 0.65rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: 0.65rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: 0rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* 设置风车hover动效 */#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color) !important;}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color) !important;  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}#article-container h1,#article-container h2,#article-container h3,#article-container h4,#article-container h5,#article-container h6 {  -webkit-transition: all 0.2s ease-out;  -moz-transition: all 0.2s ease-out;  -o-transition: all 0.2s ease-out;  -ms-transition: all 0.2s ease-out;  transition: all 0.2s ease-out;}#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before {  position: absolute;  top: calc(50% - 7px);  color: #f47466;  content: "\f863";  line-height: 1;  -webkit-transition: all 0.2s ease-out;  -moz-transition: all 0.2s ease-out;  -o-transition: all 0.2s ease-out;  -ms-transition: all 0.2s ease-out;  transition: all 0.2s ease-out;}#article-container h1:hover:before,#article-container h2:hover:before,#article-container h3:hover:before,#article-container h4:hover:before,#article-container h5:hover:before,#article-container h6:hover:before {  color: #49b1f5;}#article-container h1 {  padding-left: 32px;}#article-container h1:before {  /* margin-left: -26px; */  /* font-size: 20px; */}#article-container h1:hover {  padding-left: 38px;}#article-container h2 {  padding-left: 30px;}#article-container h2:before {  margin-left: -24px;  font-size: 18px;}#article-container h2:hover {  padding-left: 36px;}#article-container h3 {  padding-left: 28px;}#article-container h3:before {  margin-left: -22px;  font-size: 16px;}#article-container h3:hover {  padding-left: 34px;}#article-container h4 {  padding-left: 26px;}#article-container h4:before {  margin-left: -20px;  font-size: 14px;}#article-container h4:hover {  padding-left: 32px;}#article-container h5 {  padding-left: 24px;}#article-container h5:before {  margin-left: -18px;  font-size: 12px;}#article-container h5:hover {  padding-left: 30px;}#article-container h6 {  padding-left: 24px;}#article-container h6:before {  margin-left: -18px;  font-size: 12px;}#article-container h6:hover {  padding-left: 30px;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/transparent.css"/>
       <url>/css/transparent.css</url>
       
@@ -132,19 +143,19 @@
     
     <entry>
       <title></title>
-      <link href="/css/pageCard.css"/>
-      <url>/css/pageCard.css</url>
+      <link href="/css/windmill.css"/>
+      <url>/css/windmill.css</url>
       
-        <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.7);  --trans-dark: rgba(25, 25, 25, 0.65);  --border-style: 1px solid rgb(82, 82, 82);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}]]></content>
+        <content type="html"><![CDATA[/* 文章页H1-H6图标样式效果 *//* 控制风车转动速度 */h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {  -webkit-animation: ccc 4s linear infinite;  animation: ccc 4s linear infinite;}/* 控制风车转动方向 -1turn 为逆时针转动，1turn 为顺时针转动，相同数字部分记得统一修改 */@-webkit-keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}@keyframes ccc {  0% {    -webkit-transform: rotate(0deg);    transform: rotate(0deg);  }  to {    -webkit-transform: rotate(-1turn);    transform: rotate(-1turn);  }}.fontawesomeIcon,hr:before,#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before,#post .post-outdate-notice:before,.note:not(.no-icon)::before {  display: inline-block;  font-weight: 600;  font-family: "Font Awesome 6 Free";  text-rendering: auto;  -webkit-font-smoothing: antialiased;}/* 设置风车颜色 */#content-inner.layout h1::before {  color: #ef50a8;  margin-left: -1.55rem;  font-size: 1.3rem;  margin-top: 0.65rem;}#content-inner.layout h2::before {  color: #fb7061;  margin-left: -1.35rem;  font-size: 1.1rem;  margin-top: 0.65rem;}#content-inner.layout h3::before {  color: #ffbf00;  margin-left: -1.22rem;  font-size: 0.95rem;  margin-top: -0.09rem;}#content-inner.layout h4::before {  color: #a9e000;  margin-left: -1.05rem;  font-size: 0.8rem;  margin-top: 0rem;}#content-inner.layout h5::before {  color: #57c850;  margin-left: -0.9rem;  font-size: 0.7rem;  margin-top: 0rem;}#content-inner.layout h6::before {  color: #5ec1e0;  margin-left: -0.9rem;  font-size: 0.66rem;  margin-top: 0rem;}/* 设置风车hover动效 */#content-inner.layout h1:hover,#content-inner.layout h2:hover,#content-inner.layout h3:hover,#content-inner.layout h4:hover,#content-inner.layout h5:hover,#content-inner.layout h6:hover {  color: var(--theme-color) !important;}#content-inner.layout h1:hover::before,#content-inner.layout h2:hover::before,#content-inner.layout h3:hover::before,#content-inner.layout h4:hover::before,#content-inner.layout h5:hover::before,#content-inner.layout h6:hover::before {  color: var(--theme-color) !important;  -webkit-animation: ccc 6s linear infinite;  animation: ccc 6s linear infinite;}#article-container h1,#article-container h2,#article-container h3,#article-container h4,#article-container h5,#article-container h6 {  -webkit-transition: all 0.2s ease-out;  -moz-transition: all 0.2s ease-out;  -o-transition: all 0.2s ease-out;  -ms-transition: all 0.2s ease-out;  transition: all 0.2s ease-out;}#article-container h1:before,#article-container h2:before,#article-container h3:before,#article-container h4:before,#article-container h5:before,#article-container h6:before {  position: absolute;  top: calc(50% - 7px);  color: #f47466;  content: "\f863";  line-height: 1;  -webkit-transition: all 0.2s ease-out;  -moz-transition: all 0.2s ease-out;  -o-transition: all 0.2s ease-out;  -ms-transition: all 0.2s ease-out;  transition: all 0.2s ease-out;}#article-container h1:hover:before,#article-container h2:hover:before,#article-container h3:hover:before,#article-container h4:hover:before,#article-container h5:hover:before,#article-container h6:hover:before {  color: #49b1f5;}#article-container h1 {  padding-left: 32px;}#article-container h1:before {  /* margin-left: -26px; */  /* font-size: 20px; */}#article-container h1:hover {  padding-left: 38px;}#article-container h2 {  padding-left: 30px;}#article-container h2:before {  margin-left: -24px;  font-size: 18px;}#article-container h2:hover {  padding-left: 36px;}#article-container h3 {  padding-left: 28px;}#article-container h3:before {  margin-left: -22px;  font-size: 16px;}#article-container h3:hover {  padding-left: 34px;}#article-container h4 {  padding-left: 26px;}#article-container h4:before {  margin-left: -20px;  font-size: 14px;}#article-container h4:hover {  padding-left: 32px;}#article-container h5 {  padding-left: 24px;}#article-container h5:before {  margin-left: -18px;  font-size: 12px;}#article-container h5:hover {  padding-left: 30px;}#article-container h6 {  padding-left: 24px;}#article-container h6:before {  margin-left: -18px;  font-size: 12px;}#article-container h6:hover {  padding-left: 30px;}]]></content>
       
     </entry>
     
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -156,17 +167,6 @@
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

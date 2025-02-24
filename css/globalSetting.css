@@ -20,5 +20,9 @@
 
 /*侧边栏中的公告图标间距设置*/
 #aside-content .item-headline {
-  margin-left: -2px;
+  margin-left: 0px;
+}
+
+#aside-content .card-webinfo .item-headline {
+  display: flex;
 }
