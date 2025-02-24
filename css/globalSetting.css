@@ -6,3 +6,14 @@
 #nav .site-page {
   font-size: 0.9em;
 }
+
+/*个人卡片中的社交图标间距设置*/
+#aside-content .card-widget .card-info-social-icons .social-icon i,
+#aside-content .card-widget .card-info-social-icons .social-icon svg {
+  background: transparent;
+  border-radius: 14px;
+  padding: 6px;
+}
+#aside-content .card-widget .author-info__bottom-group {
+  display: -webkit-box;
+}
