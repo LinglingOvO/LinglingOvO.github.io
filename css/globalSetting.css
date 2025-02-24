@@ -42,6 +42,7 @@
 #aside-content .card-info .author-info-avatar {
   margin: 36px auto;
 }
+
 /* 减小头像中描述的 “上巴”  */
 #aside-content .card-widget .author-info__description {
   top: 32px;
