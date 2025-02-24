@@ -17,3 +17,8 @@
 #aside-content .card-widget .author-info__bottom-group {
   display: -webkit-box;
 }
+
+/*侧边栏中的公告图标间距设置*/
+#aside-content .item-headline {
+  margin-left: -2px;
+}
