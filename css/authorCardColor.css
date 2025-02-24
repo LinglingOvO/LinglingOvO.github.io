@@ -8,7 +8,7 @@
     #bdbdf0,
     #eec1ea
   );
-  box-shadow: 0 0 5px rgb(66, 68, 68);
+  box-shadow: 0 0 5px rgb(255, 255, 255);
   position: relative;
   background-size: 400% 400%;
   -webkit-animation: Gradient 10s ease infinite;
