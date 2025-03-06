@@ -74,6 +74,31 @@
     
     <entry>
       <title>Markdown 语法学习</title>
+      <link href="/2025/02/12/Markdown%20%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%20copy/"/>
+      <url>/2025/02/12/Markdown%20%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%20copy/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><strong>Description</strong>：本文是对个人的 Markdown语法知识进行复习或补充。有关 Markdown语法的具体内容，可以查看参考资料中的文档。</p></blockquote><h2 id="1-基础语法">1 基础语法</h2><h3 id="11-斜体">1.1 斜体</h3><ul><li>语法：<code>*斜体*</code></li><li>示例输出：<em>斜体</em></li></ul><h3 id="12-粗斜体">1.2 粗斜体</h3><ul><li>语法：<code>***粗斜体***</code></li><li>示例输出：<strong><em>粗斜体</em></strong></li></ul><h3 id="13-引用">1.3 引用</h3><ul><li>语法：</li></ul><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 引用语法</span></span><br><span class="line"><span class="quote">&gt;</span></span><br><span class="line"><span class="quote">&gt; &gt; 引用语法</span></span><br><span class="line"><span class="quote">&gt; &gt;</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; 引用语法</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt;</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; &gt; 引用语法</span></span><br></pre></td></tr></table></figure><ul><li>示例输出：<blockquote><p>引用语法</p><blockquote><p>引用语法</p><blockquote><p>引用语法</p><blockquote><p>引用语法</p></blockquote></blockquote></blockquote></blockquote></li></ul><h3 id="14-高亮">1.4 高亮</h3><ul><li>语法：<code>==想要高亮的内容==</code></li><li>示例输出：==想要高亮的内容==</li></ul><h3 id="15-删除线">1.5 删除线</h3><ul><li>语法：<code>~~想要设置删除线的内容~~</code></li><li>示例输出：<del>想要设置删除线的内容</del></li></ul><h3 id="16-下划线">1.6 下划线</h3><ul><li>HTML 语法：<code>&lt;u&gt;想要设置下划线的内容&lt;/u&gt;</code></li><li>示例输出：<u>想要设置下划线的内容</u></li></ul><h3 id="17-编写行内代码">1.7 编写行内代码</h3><p>如果要编写行内代码或在短语中包含一个或多个反引号，可以用双反引号 (``)将代码或短语括起来，也可以使用 HTML 语法。</p><ul><li>语法：<ol type="1"><li>Markdown 形式：``在你的 Markdown 文件中使用 `code`。``</li><li>HTML形式：<code>&lt;code&gt;在你的 Markdown 文件中使用 `code`。&lt;/code&gt;</code></li></ol></li><li>示例输出：在你的 Markdown 文件中使用  <code>code</code>。</li></ul><h3 id="18-上下标">1.8 上下标</h3><ul><li>HTML语法：<code>H&lt;sub&gt;2&lt;/sub&gt;O</code>，<code>X&lt;sup&gt;2&lt;/sup&gt;</code></li><li>示例输出：H<sub>2</sub>O，X<sup>2</sup></li></ul><blockquote><p><strong>注意</strong>：在 Obsidian 中 Markdown的上下标语法可能不生效。</p></blockquote><h3 id="19-使用表情符号">1.9 使用表情符号</h3><p>通过键入表情符号简码来插入表情符号。这些简码以冒号 (:)开头和结尾，并包含表情符号的名称。</p><ul><li>语法：<code>:joy:</code></li><li>示例输出：😂<blockquote><p><strong>注意</strong>：通常可以使用此<a href="https://gist.github.com/rxaviers/7360908">表情符号简码列表</a>，但表情符号简码可能因应用程序而异。有关更多信息，可以参阅所使用的Markdown 应用程序文档。</p></blockquote></li></ul><h3 id="110-markdown-中的-html">1.10 Markdown 中的 HTML</h3><h4 id="1101-居中">1.10.1 居中</h4><ul><li>使用 HTML 中的标签 <code>&lt;center&gt;</code>。</li><li>语法：<code>&lt;center&gt;This text is centered.&lt;/center&gt;</code></li><li>示例输出：</li></ul><center>This text is centered.</center><h4 id="1102-更改文本颜色">1.10.2 更改文本颜色</h4><ul><li>Markdown 语法不支持更改文本颜色，但可以使用 HTML 中的标签 <code>&lt;font&gt;</code>，通过修改其中的 color属性值，即可更改文本颜色。</li><li>可以使用颜色的名称或十六进制  <code>#RRGGBB</code>  代码修改 color属性的值。</li><li>语法：<code>&lt;font color="red"&gt;This text is red!&lt;/font&gt;</code></li><li>示例输出：<font color="red">This text is red!</font></li></ul><h4 id="1103-调整图像大小">1.10.3 调整图像大小</h4><ul><li>使用 HTML 中的标签 img，通过修改其 width 和 height属性来以像素为单位设置图像的尺寸。</li><li>语法：<code>&lt;img src="https://111-1321365386.cos.ap-beijing.myqcloud.com/20250213040901088.jpg" width="200" height="100"&gt;</code></li><li>示例输出：<img src="https://111-1321365386.cos.ap-beijing.myqcloud.com/20250213040901088.jpg" width="200" height="100"></li><li>原图：<img src="https://111-1321365386.cos.ap-beijing.myqcloud.com/20250213040901088.jpg" alt="dog"></li></ul><h4 id="1104-符号">1.10.4 符号</h4><p>Markdown 没有为符号提供特殊语法。若想使用符号，有 2 种方式：</p><ol type="1"><li>在大多数情况下，可以将任何你想要使用的符号复制并粘贴到 Markdown文档中。</li><li>可以使用 HTML 实体来表示任何你想要使用的符号。符号的 HTML实体的部分列表如下：<ul><li>版权 (©) — <code>&amp;copy;</code></li><li>注册商标 (®) — <code>&amp;reg;</code></li><li>商标 (™) — <code>&amp;trade;</code></li><li>欧元 (€) — <code>&amp;euro;</code></li><li>左箭头 (←) — <code>&amp;larr;</code></li><li>上箭头 (↑) — <code>&amp;uarr;</code></li><li>右箭头 (→) — <code>&amp;rarr;</code></li><li>下箭头 (↓) — <code>&amp;darr;</code></li><li>度数 (°) — <code>&amp;#176;</code></li><li>圆周率 (π) — <code>&amp;#960;</code></li></ul></li></ol><h2 id="2-使用技巧">2 使用技巧</h2><h3 id="21-标题">2.1 标题：</h3><p>在文档创作中，一般采用如下的标题层级结构：</p><ol type="1"><li><code># 文章主标题</code> （一级标题，对应 Front Matter 中的 <code>title</code>  字段）</li><li><code>## 核心章节</code> （二级标题，用于主体内容划分）</li><li><code>### 子章节</code> （三级标题，用于细节内容展开）</li><li><code>#### 细分段落</code> （四级标题，建议不超过此层级）</li></ol><p>以本文档为例：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Markdown 语法学习</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 1 基础语法</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 1.10 Markdown 中的 HTML</span></span><br><span class="line"></span><br><span class="line"><span class="section">#### 1.10.1 居中</span></span><br></pre></td></tr></table></figure><blockquote><p><strong>注意</strong>：</p><ul><li>Markdown 语法最多支持 6 级标题</li><li>注意文章的层级连续性，避免出现跳级使用（如一级标题后直接使用三级标题）</li></ul></blockquote><h3 id="22-列表">2.2 列表</h3><p>Markdown 语法中，有序列表和无序列表之间可以互相嵌套使用。</p><h3 id="23-链接">2.3 链接</h3><p>可以选择为链接添加提示。当用户将鼠标悬停在链接上时，即可显示提示。</p><ul><li>语法：<code>[Google Search](https://www.google.com.hk/ "谷歌搜索")</code></li><li>示例输出：<a href="https://www.google.com.hk/" title="谷歌搜索">Google Search</a></li></ul><p>若想在图片中添加链接，可以用方括号括住图片的Markdown，然后在括号中添加链接，即嵌套使用。</p><ul><li>语法：<code>[![MyImage](https://111-1321365386.cos.ap-beijing.myqcloud.com/20250213040901088.jpg)](https://www.bing.com/search?q=%E7%8B%97)</code></li><li>示例输出：<a href="https://www.bing.com/search?q=%E7%8B%97"><img src="https://111-1321365386.cos.ap-beijing.myqcloud.com/20250213040901088.jpg" alt="MyImage"></a></li></ul><h3 id="24-缩进">2.4 缩进</h3><ul><li>HTML 语法：<ul><li><code>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;段落的第二句。</code></li><li>此处的<code>&amp;nbsp;</code>相当于空格。</li></ul></li><li>示例输出：<ul><li>    段落的第二句。</li><li>此处的 相当于空格。</li></ul></li></ul><blockquote><p><strong>注意</strong>：在编写 Markdown文档时，除非段落位于列表中，否则不要使用空格或制表符缩进段落。</p></blockquote><h2 id="3-参考资料">3 参考资料</h2><ol type="1"><li><a href="https://www.markdown.cn/docs/intro/">Markdown 文档教程(中文版)</a></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown 语法学习</title>
       <link href="/2025/02/12/Markdown%20%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
       <url>/2025/02/12/Markdown%20%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</url>
       
@@ -112,9 +137,20 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/css/authorAvatar.css"/>
+      <url>/css/authorAvatar.css</url>
+      
+        <content type="html"><![CDATA[/* 头像呼吸灯 */[data-theme="light"] .avatar-img {  animation: huxi_light 4s ease-in-out infinite;}[data-theme="dark"] .avatar-img {  animation: huxi_dark 4s ease-in-out infinite;}@keyframes huxi_light {  0% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }  50% {    box-shadow: 0px 0px 5px 5px #e9f5fa;  }  100% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }}@keyframes huxi_dark {  0% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }  50% {    box-shadow: 0px 0px 5px 5px #39c5bb;  }  100% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/js/myConsole.js"/>
+      <url>/js/myConsole.js</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -135,10 +171,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/authorAvatar.css"/>
-      <url>/css/authorAvatar.css</url>
+      <link href="/css/neon.css"/>
+      <url>/css/neon.css</url>
       
-        <content type="html"><![CDATA[/* 头像呼吸灯 */[data-theme="light"] .avatar-img {  animation: huxi_light 4s ease-in-out infinite;}[data-theme="dark"] .avatar-img {  animation: huxi_dark 4s ease-in-out infinite;}@keyframes huxi_light {  0% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }  50% {    box-shadow: 0px 0px 5px 5px #e9f5fa;  }  100% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }}@keyframes huxi_dark {  0% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }  50% {    box-shadow: 0px 0px 5px 5px #39c5bb;  }  100% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }}]]></content>
+        <content type="html"><![CDATA[/* 日间模式不生效 */[data-theme="light"] #site-name,[data-theme="light"] #site-title,[data-theme="light"] #site-subtitle,[data-theme="light"] #post-info {  animation: none;}/* 夜间模式生效 */[data-theme="dark"] #site-name,[data-theme="dark"] #site-title {  animation: light_15px 10s linear infinite;}[data-theme="dark"] #site-subtitle {  animation: light_10px 10s linear infinite;}[data-theme="dark"] #post-info {  animation: light_5px 10s linear infinite;}/* 关键帧描述 */@keyframes light_15px {  0% {    text-shadow: #5636ed 0 0 15px;  }  12.5% {    text-shadow: #11ee5e 0 0 15px;  }  25% {    text-shadow: #f14747 0 0 15px;  }  37.5% {    text-shadow: #f1a247 0 0 15px;  }  50% {    text-shadow: #f1ee47 0 0 15px;  }  50% {    text-shadow: #b347f1 0 0 15px;  }  62.5% {    text-shadow: #002afa 0 0 15px;  }  75% {    text-shadow: #ed709b 0 0 15px;  }  87.5% {    text-shadow: #39c5bb 0 0 15px;  }  100% {    text-shadow: #5636ed 0 0 15px;  }}@keyframes light_10px {  0% {    text-shadow: #5636ed 0 0 10px;  }  12.5% {    text-shadow: #11ee5e 0 0 10px;  }  25% {    text-shadow: #f14747 0 0 10px;  }  37.5% {    text-shadow: #f1a247 0 0 10px;  }  50% {    text-shadow: #f1ee47 0 0 10px;  }  50% {    text-shadow: #b347f1 0 0 10px;  }  62.5% {    text-shadow: #002afa 0 0 10px;  }  75% {    text-shadow: #ed709b 0 0 10px;  }  87.5% {    text-shadow: #39c5bb 0 0 10px;  }  100% {    text-shadow: #5636ed 0 0 10px;  }}@keyframes light_5px {  0% {    text-shadow: #5636ed 0 0 5px;  }  12.5% {    text-shadow: #11ee5e 0 0 5px;  }  25% {    text-shadow: #f14747 0 0 5px;  }  37.5% {    text-shadow: #f1a247 0 0 15px;  }  50% {    text-shadow: #f1ee47 0 0 5px;  }  50% {    text-shadow: #b347f1 0 0 5px;  }  62.5% {    text-shadow: #002afa 0 0 5px;  }  75% {    text-shadow: #ed709b 0 0 5px;  }  87.5% {    text-shadow: #39c5bb 0 0 5px;  }  100% {    text-shadow: #5636ed 0 0 5px;  }}]]></content>
       
     </entry>
     
@@ -157,17 +193,6 @@
     
     <entry>
       <title></title>
-      <link href="/css/globalSetting.css"/>
-      <url>/css/globalSetting.css</url>
-      
-        <content type="html"><![CDATA[/* #web_bg {  background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);} *//* 菜单栏中选项字体大小的设置 */#nav .site-page {  font-size: 0.9em;}/* 个人卡片中的社交图标间距设置 */#aside-content .card-widget .card-info-social-icons .social-icon i,#aside-content .card-widget .card-info-social-icons .social-icon svg {  background: transparent;  border-radius: 14px;  padding: 6px;}#aside-content .card-widget .author-info__bottom-group {  display: -webkit-box;}/* 侧边栏中的公告图标间距设置 */#aside-content .item-headline {  margin-left: 0px;}/* 侧边栏中的网站资讯信息显示 */#aside-content .card-webinfo .item-headline {  display: flex;}/* 分类页面的背景设置 */[data-theme="dark"] div#tag {  background: transparent;}/* 减小头像的 “下巴”  */#aside-content > .card-widget.card-info > .card-content {  min-height: 200px;}/* 减小头像的 “上巴”  */#aside-content .card-info .author-info-avatar {  margin: 36px auto;}/* 减小头像中描述的 “上巴”  */#aside-content .card-widget .author-info__description {  top: 32px;}/* 关闭右键菜单中简繁切换按钮的显示  */#rightMenu .rightMenu-group.rightMenu-line #menu-translate {  display: none;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/pageCard.css"/>
       <url>/css/pageCard.css</url>
       
@@ -179,10 +204,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/neon.css"/>
-      <url>/css/neon.css</url>
+      <link href="/css/globalSetting.css"/>
+      <url>/css/globalSetting.css</url>
       
-        <content type="html"><![CDATA[/* 日间模式不生效 */[data-theme="light"] #site-name,[data-theme="light"] #site-title,[data-theme="light"] #site-subtitle,[data-theme="light"] #post-info {  animation: none;}/* 夜间模式生效 */[data-theme="dark"] #site-name,[data-theme="dark"] #site-title {  animation: light_15px 10s linear infinite;}[data-theme="dark"] #site-subtitle {  animation: light_10px 10s linear infinite;}[data-theme="dark"] #post-info {  animation: light_5px 10s linear infinite;}/* 关键帧描述 */@keyframes light_15px {  0% {    text-shadow: #5636ed 0 0 15px;  }  12.5% {    text-shadow: #11ee5e 0 0 15px;  }  25% {    text-shadow: #f14747 0 0 15px;  }  37.5% {    text-shadow: #f1a247 0 0 15px;  }  50% {    text-shadow: #f1ee47 0 0 15px;  }  50% {    text-shadow: #b347f1 0 0 15px;  }  62.5% {    text-shadow: #002afa 0 0 15px;  }  75% {    text-shadow: #ed709b 0 0 15px;  }  87.5% {    text-shadow: #39c5bb 0 0 15px;  }  100% {    text-shadow: #5636ed 0 0 15px;  }}@keyframes light_10px {  0% {    text-shadow: #5636ed 0 0 10px;  }  12.5% {    text-shadow: #11ee5e 0 0 10px;  }  25% {    text-shadow: #f14747 0 0 10px;  }  37.5% {    text-shadow: #f1a247 0 0 10px;  }  50% {    text-shadow: #f1ee47 0 0 10px;  }  50% {    text-shadow: #b347f1 0 0 10px;  }  62.5% {    text-shadow: #002afa 0 0 10px;  }  75% {    text-shadow: #ed709b 0 0 10px;  }  87.5% {    text-shadow: #39c5bb 0 0 10px;  }  100% {    text-shadow: #5636ed 0 0 10px;  }}@keyframes light_5px {  0% {    text-shadow: #5636ed 0 0 5px;  }  12.5% {    text-shadow: #11ee5e 0 0 5px;  }  25% {    text-shadow: #f14747 0 0 5px;  }  37.5% {    text-shadow: #f1a247 0 0 15px;  }  50% {    text-shadow: #f1ee47 0 0 5px;  }  50% {    text-shadow: #b347f1 0 0 5px;  }  62.5% {    text-shadow: #002afa 0 0 5px;  }  75% {    text-shadow: #ed709b 0 0 5px;  }  87.5% {    text-shadow: #39c5bb 0 0 5px;  }  100% {    text-shadow: #5636ed 0 0 5px;  }}]]></content>
+        <content type="html"><![CDATA[/* #web_bg {  background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);} *//* 菜单栏中选项字体大小的设置 */#nav .site-page {  font-size: 0.9em;}/* 个人卡片中的社交图标间距设置 */#aside-content .card-widget .card-info-social-icons .social-icon i,#aside-content .card-widget .card-info-social-icons .social-icon svg {  background: transparent;  border-radius: 14px;  padding: 6px;}#aside-content .card-widget .author-info__bottom-group {  display: -webkit-box;}/* 侧边栏中的公告图标间距设置 */#aside-content .item-headline {  margin-left: 0px;}/* 侧边栏中的网站资讯信息显示 */#aside-content .card-webinfo .item-headline {  display: flex;}/* 分类页面的背景设置 */[data-theme="dark"] div#tag {  background: transparent;}/* 减小头像的 “下巴”  */#aside-content > .card-widget.card-info > .card-content {  min-height: 200px;}/* 减小头像的 “上巴”  */#aside-content .card-info .author-info-avatar {  margin: 36px auto;}/* 减小头像中描述的 “上巴”  */#aside-content .card-widget .author-info__description {  top: 32px;}/* 关闭右键菜单中简繁切换按钮的显示  */#rightMenu .rightMenu-group.rightMenu-line #menu-translate {  display: none;}]]></content>
       
     </entry>
     
@@ -201,6 +226,28 @@
     
     <entry>
       <title></title>
+      <link href="/css/transparent.css"/>
+      <url>/css/transparent.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/windmill.css"/>
       <url>/css/windmill.css</url>
       
@@ -212,21 +259,10 @@
     
     <entry>
       <title></title>
-      <link href="/js/myConsole.js"/>
-      <url>/js/myConsole.js</url>
+      <link href="/theSite/index.html"/>
+      <url>/theSite/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/transparent.css"/>
-      <url>/css/transparent.css</url>
-      
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}]]></content>
       
     </entry>
     
@@ -236,17 +272,6 @@
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/theSite/index.html"/>
-      <url>/theSite/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
