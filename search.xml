@@ -101,11 +101,33 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/authorCardColor.css"/>
-      <url>/css/authorCardColor.css</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(255, 255, 255);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;  --anzhiyu-main-op-deep: ; /*这里是额外加的*/}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/comment.css"/>
+      <url>/css/comment.css</url>
+      
+        <content type="html"><![CDATA[/* twikoo评论美化 *//* 自定义twikoo评论输入框高度 */#twikoo .el-textarea textarea {  min-height: 120px !important;  background-size: 90px;}/* 自定义表情优化 */#twikoo .OwO-body {  max-width: 100% !important;}/* 选择某个框 #twikoo .OwO .OwO-body .OwO-items:nth-child(1) */#twikoo .OwO .OwO-body .OwO-items {  max-height: 250px !important;}.OwO .OwO-body .OwO-items-image .OwO-item {  max-width: calc(9% - 10px);  box-sizing: content-box;}.OwO .OwO-body .OwO-items-image .OwO-item[title|="Heybox"],.OwO .OwO-body .OwO-items-image .OwO-item[title|="Tieba"],.OwO .OwO-body .OwO-items-show .OwO-item[title*="bilibili"] {  max-width: calc(7% - 10px) !important;  box-sizing: content-box;}#twikoo .OwO-items li img {  width: 100% !important;}.tk-comment .vemoji[alt|="Menhera"],.tk-comment .tk-owo-emotion[alt*="Menhera"],.tk-comment .vemoji[alt|="Snow"],.tk-comment .tk-owo-emotion[alt*="Snow"],.tk-comment .vemoji[alt|="Sweetie"],.tk-comment .tk-owo-emotion[alt*="Sweetie"],.tk-comment .vemoji[alt|="Tsuri"],.tk-comment .tk-owo-emotion[alt*="Tsuri"],.tk-comment .vemoji[alt|="Yurui"],.tk-comment .tk-owo-emotion[alt*="Yurui"] {  max-width: 120px !important;  max-height: 120px !important;  width: 120px;  margin: 8px 1px;  display: block !important;}/* 手机端适配 */@media screen and (max-width: 768px) {  .tk-comment .vemoji[alt|="Menhera"],  .tk-comment .tk-owo-emotion[alt*="Menhera"],  .tk-comment .vemoji[alt|="Snow"],  .tk-comment .tk-owo-emotion[alt*="Snow"],  .tk-comment .vemoji[alt|="Sweetie"],  .tk-comment .tk-owo-emotion[alt*="Sweetie"],  .tk-comment .vemoji[alt|="Tsuri"],  .tk-comment .tk-owo-emotion[alt*="Tsuri"],  .tk-comment .vemoji[alt|="Yurui"],  .tk-comment .tk-owo-emotion[alt*="Yurui"] {    max-width: calc(100% - 30px) !important;    max-height: calc(100% - 30px) !important;  }  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Menhera"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Snow"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Sweetie"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tsuri"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Yurui"] {    max-width: calc(33% - 10px);    box-sizing: border-box;  }  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Heybox"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="bilibili"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tieba"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="QQ"] {    max-width: calc(18% - 10px) !important;    box-sizing: content-box;  }}/* 右下角闭眼 */.el-textarea__inner {  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/open.webp) !important;}.el-textarea__inner:focus {  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/close.webp) !important;}]]></content>
       
     </entry>
     
@@ -124,10 +146,21 @@
     
     <entry>
       <title></title>
-      <link href="/css/comment.css"/>
-      <url>/css/comment.css</url>
+      <link href="/css/authorCardColor.css"/>
+      <url>/css/authorCardColor.css</url>
       
-        <content type="html"><![CDATA[/* twikoo评论美化 *//* 自定义twikoo评论输入框高度 */#twikoo .el-textarea textarea {  min-height: 120px !important;  background-size: 90px;}/* 自定义表情优化 */#twikoo .OwO-body {  max-width: 100% !important;}/* 选择某个框 #twikoo .OwO .OwO-body .OwO-items:nth-child(1) */#twikoo .OwO .OwO-body .OwO-items {  max-height: 250px !important;}.OwO .OwO-body .OwO-items-image .OwO-item {  max-width: calc(9% - 10px);  box-sizing: content-box;}.OwO .OwO-body .OwO-items-image .OwO-item[title|="Heybox"],.OwO .OwO-body .OwO-items-image .OwO-item[title|="Tieba"],.OwO .OwO-body .OwO-items-show .OwO-item[title*="bilibili"] {  max-width: calc(7% - 10px) !important;  box-sizing: content-box;}#twikoo .OwO-items li img {  width: 100% !important;}.tk-comment .vemoji[alt|="Menhera"],.tk-comment .tk-owo-emotion[alt*="Menhera"],.tk-comment .vemoji[alt|="Snow"],.tk-comment .tk-owo-emotion[alt*="Snow"],.tk-comment .vemoji[alt|="Sweetie"],.tk-comment .tk-owo-emotion[alt*="Sweetie"],.tk-comment .vemoji[alt|="Tsuri"],.tk-comment .tk-owo-emotion[alt*="Tsuri"],.tk-comment .vemoji[alt|="Yurui"],.tk-comment .tk-owo-emotion[alt*="Yurui"] {  max-width: 120px !important;  max-height: 120px !important;  width: 120px;  margin: 8px 1px;  display: block !important;}/* 手机端适配 */@media screen and (max-width: 768px) {  .tk-comment .vemoji[alt|="Menhera"],  .tk-comment .tk-owo-emotion[alt*="Menhera"],  .tk-comment .vemoji[alt|="Snow"],  .tk-comment .tk-owo-emotion[alt*="Snow"],  .tk-comment .vemoji[alt|="Sweetie"],  .tk-comment .tk-owo-emotion[alt*="Sweetie"],  .tk-comment .vemoji[alt|="Tsuri"],  .tk-comment .tk-owo-emotion[alt*="Tsuri"],  .tk-comment .vemoji[alt|="Yurui"],  .tk-comment .tk-owo-emotion[alt*="Yurui"] {    max-width: calc(100% - 30px) !important;    max-height: calc(100% - 30px) !important;  }  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Menhera"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Snow"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Sweetie"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tsuri"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Yurui"] {    max-width: calc(33% - 10px);    box-sizing: border-box;  }  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Heybox"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="bilibili"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="Tieba"],  .OwO .OwO-body .OwO-items-image .OwO-item[title*="QQ"] {    max-width: calc(18% - 10px) !important;    box-sizing: content-box;  }}/* 右下角闭眼 */.el-textarea__inner {  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/open.webp) !important;}.el-textarea__inner:focus {  background-image: url(https://tuchuang.voooe.cn/images/2023/01/02/close.webp) !important;}]]></content>
+        <content type="html"><![CDATA[/* 侧边栏个人信息卡片动态渐变色 */#aside-content > .card-widget.card-info {  background: linear-gradient(    -45deg,    #e8d8b9,    #eccec5,    #a3e9eb,    #bdbdf0,    #eec1ea  );  box-shadow: 0 0 5px rgb(255, 255, 255);  position: relative;  background-size: 400% 400%;  -webkit-animation: Gradient 10s ease infinite;  -moz-animation: Gradient 10s ease infinite;  animation: Gradient 10s ease infinite !important;  --anzhiyu-main-op-deep: ; /*这里是额外加的*/}@-webkit-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@-moz-keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}@keyframes Gradient {  0% {    background-position: 0% 50%;  }  50% {    background-position: 100% 50%;  }  100% {    background-position: 0% 50%;  }}/* 黑夜模式适配 */[data-theme="dark"] #aside-content > .card-widget.card-info {  background: #191919ee;}/* 个人信息Follow me按钮 */#aside-content > .card-widget.card-info > #card-info-btn {  background-color: #3eb8be;  border-radius: 8px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/scrollBar.css"/>
+      <url>/css/scrollBar.css</url>
+      
+        <content type="html"><![CDATA[/* 滚动条样式 */::-webkit-scrollbar {  width: 8px;  height: 8px;}::-webkit-scrollbar-track {  background-color: rgba(73, 177, 245, 0.2);  border-radius: 2em;}::-webkit-scrollbar-thumb {  background-color: var(--theme-color);  background-image: -webkit-linear-gradient(    45deg,    rgba(255, 255, 255, 0.4) 25%,    transparent 25%,    transparent 50%,    rgba(255, 255, 255, 0.4) 50%,    rgba(255, 255, 255, 0.4) 75%,    transparent 75%,    transparent  );  border-radius: 2em;}::-webkit-scrollbar-corner {  background-color: transparent;}::-moz-selection {  color: #fff;  background-color: var(--theme-color);}]]></content>
       
     </entry>
     
@@ -157,43 +190,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/transparent.css"/>
-      <url>/css/transparent.css</url>
-      
-        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/scrollBar.css"/>
-      <url>/css/scrollBar.css</url>
-      
-        <content type="html"><![CDATA[/* 滚动条样式 */::-webkit-scrollbar {  width: 8px;  height: 8px;}::-webkit-scrollbar-track {  background-color: rgba(73, 177, 245, 0.2);  border-radius: 2em;}::-webkit-scrollbar-thumb {  background-color: var(--theme-color);  background-image: -webkit-linear-gradient(    45deg,    rgba(255, 255, 255, 0.4) 25%,    transparent 25%,    transparent 50%,    rgba(255, 255, 255, 0.4) 50%,    rgba(255, 255, 255, 0.4) 75%,    transparent 75%,    transparent  );  border-radius: 2em;}::-webkit-scrollbar-corner {  background-color: transparent;}::-moz-selection {  color: #fff;  background-color: var(--theme-color);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
       <link href="/css/pageCard.css"/>
       <url>/css/pageCard.css</url>
       
         <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.7);  --trans-dark: rgba(25, 25, 25, 0.65);  --border-style: 1px solid rgb(82, 82, 82);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -212,21 +212,10 @@
     
     <entry>
       <title></title>
-      <link href="/theSite/index.html"/>
-      <url>/theSite/index.html</url>
+      <link href="/css/transparent.css"/>
+      <url>/css/transparent.css</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {  background: transparent !important;}#page-header {  background: transparent !important;}/* 白天模式遮罩透明 */#footer::before {  background: transparent !important;}#page-header::before {  background: transparent !important;}/* 夜间模式遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}]]></content>
       
     </entry>
     
@@ -247,6 +236,17 @@
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/theSite/index.html"/>
+      <url>/theSite/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
