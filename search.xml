@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>LeetCode 远征日记（1）</title>
+      <link href="/2025/03/09/LeetCode%20%E8%BF%9C%E5%BE%81%E6%97%A5%E8%AE%B0%EF%BC%881%EF%BC%89/"/>
+      <url>/2025/03/09/LeetCode%20%E8%BF%9C%E5%BE%81%E6%97%A5%E8%AE%B0%EF%BC%881%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h2 id="两数之和"><a href="https://leetcode.cn/problems/two-sum/description/">两数之和</a></h2><h3 id="-方法一两个-for-循环遍历">📖 方法一：两个 for 循环遍历</h3><h4 id="思路">思路</h4><p>首先，也是最容易想到的就是利用两个 for循环遍历所有的取值可能，如果有两个数的和为 目标值 target就立即返回这两个数的下标。</p><h4 id="代码">代码</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> {</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="type">int</span> i, j;</span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">twoSum</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> target)</span> </span>{</span><br><span class="line">        <span class="comment">// get the first number</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> size = nums.<span class="built_in">size</span>(), i = <span class="number">0</span>; i &lt; size - <span class="number">1</span>; i++) {</span><br><span class="line">            <span class="comment">// get the second number</span></span><br><span class="line">            <span class="keyword">for</span> (j = i + <span class="number">1</span>; j &lt; size; j++) {</span><br><span class="line">                <span class="keyword">if</span> ((nums[i] + nums[j]) == target) {</span><br><span class="line">                    <span class="keyword">return</span> {i, j};</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    <span class="keyword">return</span> {};</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></table></figure><h4 id="收获">收获</h4><ol type="1"><li>当函数的返回类型是 <code>vector&lt;int&gt;</code>时，可以使用如下的返回语句：</li></ol><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> {i, j};</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> {}; <span class="comment">//返回空值</span></span><br></pre></td></tr></table></figure><h4 id="总结">总结</h4><p>本题是我再次回归后做的第一道题，帮助我复习了一些 C++的语法知识。但属实没想到，现在我想个 for 循环遍历的写法就想了半天😭。</p><p>值得高兴的是 😝，我成功打破了 vector的“魔咒”，在之后的“远征之路”上应该暂时没有语法方面的阻碍了。</p><p>就是目前还不太习惯 LeetCode 的编码界面（只有一个类，不好进行 debug测试），所以我在 VS 中写了一个完整的代码进行测试（还是 VS 看着顺眼😎）。</p><p>此外，我也意识到即使是这种简单的程序也有很多可以优化的地方，比如在算法、内存管理等方面。但这些知识我还需要慢慢积累，目前还是先以解决问题为首要目标，在之后积累的足够了再回头逐步优化自己的代码。</p><p>加油吧，你是最棒的！🥳</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+            <tag> LeetCode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C++ 重修之旅（一）</title>
       <link href="/2025/03/06/Cpp%20%E9%87%8D%E4%BF%AE%E4%B9%8B%E6%97%85%EF%BC%88%E4%B8%80%EF%BC%89/"/>
       <url>/2025/03/06/Cpp%20%E9%87%8D%E4%BF%AE%E4%B9%8B%E6%97%85%EF%BC%88%E4%B8%80%EF%BC%89/</url>
@@ -112,6 +139,17 @@
     
     
     <entry>
+      <title></title>
+      <link href="/css/authorAvatar.css"/>
+      <url>/css/authorAvatar.css</url>
+      
+        <content type="html"><![CDATA[/* 头像呼吸灯 */[data-theme="light"] .avatar-img {  animation: huxi_light 4s ease-in-out infinite;}[data-theme="dark"] .avatar-img {  animation: huxi_dark 4s ease-in-out infinite;}@keyframes huxi_light {  0% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }  50% {    box-shadow: 0px 0px 5px 5px #e9f5fa;  }  100% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }}@keyframes huxi_dark {  0% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }  50% {    box-shadow: 0px 0px 5px 5px #39c5bb;  }  100% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -124,21 +162,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/globalSetting.css"/>
-      <url>/css/globalSetting.css</url>
+      <link href="/js/myConsole.js"/>
+      <url>/js/myConsole.js</url>
       
-        <content type="html"><![CDATA[/* #web_bg {  background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);} *//* 菜单栏中选项字体大小的设置 */#nav .site-page {  font-size: 0.9em;}/* 个人卡片中的社交图标间距设置 */#aside-content .card-widget .card-info-social-icons .social-icon i,#aside-content .card-widget .card-info-social-icons .social-icon svg {  background: transparent;  border-radius: 14px;  padding: 6px;}#aside-content .card-widget .author-info__bottom-group {  display: -webkit-box;}/* 侧边栏中的公告图标间距设置 */#aside-content .item-headline {  margin-left: 0px;}/* 侧边栏中的网站资讯信息显示 */#aside-content .card-webinfo .item-headline {  display: flex;}/* 分类页面的背景设置 */[data-theme="dark"] div#tag {  background: transparent;}/* 减小头像的 “下巴”  */#aside-content > .card-widget.card-info > .card-content {  min-height: 200px;}/* 减小头像的 “上巴”  */#aside-content .card-info .author-info-avatar {  margin: 36px auto;}/* 减小头像中描述的 “上巴”  */#aside-content .card-widget .author-info__description {  top: 32px;}/* 关闭右键菜单中简繁切换按钮的显示  */#rightMenu .rightMenu-group.rightMenu-line #menu-translate {  display: none;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/authorAvatar.css"/>
-      <url>/css/authorAvatar.css</url>
-      
-        <content type="html"><![CDATA[/* 头像呼吸灯 */[data-theme="light"] .avatar-img {  animation: huxi_light 4s ease-in-out infinite;}[data-theme="dark"] .avatar-img {  animation: huxi_dark 4s ease-in-out infinite;}@keyframes huxi_light {  0% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }  50% {    box-shadow: 0px 0px 5px 5px #e9f5fa;  }  100% {    box-shadow: 0px 0px 1px 1px #e9f5fa;  }}@keyframes huxi_dark {  0% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }  50% {    box-shadow: 0px 0px 5px 5px #39c5bb;  }  100% {    box-shadow: 0px 0px 1px 1px #39c5bb;  }}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -168,10 +195,32 @@
     
     <entry>
       <title></title>
+      <link href="/css/globalSetting.css"/>
+      <url>/css/globalSetting.css</url>
+      
+        <content type="html"><![CDATA[/* #web_bg {  background: url(https://111-1321365386.cos.ap-beijing.myqcloud.com/20250224091603874.png);} *//* 菜单栏中选项字体大小的设置 */#nav .site-page {  font-size: 0.9em;}/* 个人卡片中的社交图标间距设置 */#aside-content .card-widget .card-info-social-icons .social-icon i,#aside-content .card-widget .card-info-social-icons .social-icon svg {  background: transparent;  border-radius: 14px;  padding: 6px;}#aside-content .card-widget .author-info__bottom-group {  display: -webkit-box;}/* 侧边栏中的公告图标间距设置 */#aside-content .item-headline {  margin-left: 0px;}/* 侧边栏中的网站资讯信息显示 */#aside-content .card-webinfo .item-headline {  display: flex;}/* 分类页面的背景设置 */[data-theme="dark"] div#tag {  background: transparent;}/* 减小头像的 “下巴”  */#aside-content > .card-widget.card-info > .card-content {  min-height: 200px;}/* 减小头像的 “上巴”  */#aside-content .card-info .author-info-avatar {  margin: 36px auto;}/* 减小头像中描述的 “上巴”  */#aside-content .card-widget .author-info__description {  top: 32px;}/* 关闭右键菜单中简繁切换按钮的显示  */#rightMenu .rightMenu-group.rightMenu-line #menu-translate {  display: none;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/neon.css"/>
       <url>/css/neon.css</url>
       
         <content type="html"><![CDATA[/* 日间模式不生效 */[data-theme="light"] #site-name,[data-theme="light"] #site-title,[data-theme="light"] #site-subtitle,[data-theme="light"] #post-info {  animation: none;}/* 夜间模式生效 */[data-theme="dark"] #site-name,[data-theme="dark"] #site-title {  animation: light_15px 10s linear infinite;}[data-theme="dark"] #site-subtitle {  animation: light_10px 10s linear infinite;}[data-theme="dark"] #post-info {  animation: light_5px 10s linear infinite;}/* 关键帧描述 */@keyframes light_15px {  0% {    text-shadow: #5636ed 0 0 15px;  }  12.5% {    text-shadow: #11ee5e 0 0 15px;  }  25% {    text-shadow: #f14747 0 0 15px;  }  37.5% {    text-shadow: #f1a247 0 0 15px;  }  50% {    text-shadow: #f1ee47 0 0 15px;  }  50% {    text-shadow: #b347f1 0 0 15px;  }  62.5% {    text-shadow: #002afa 0 0 15px;  }  75% {    text-shadow: #ed709b 0 0 15px;  }  87.5% {    text-shadow: #39c5bb 0 0 15px;  }  100% {    text-shadow: #5636ed 0 0 15px;  }}@keyframes light_10px {  0% {    text-shadow: #5636ed 0 0 10px;  }  12.5% {    text-shadow: #11ee5e 0 0 10px;  }  25% {    text-shadow: #f14747 0 0 10px;  }  37.5% {    text-shadow: #f1a247 0 0 10px;  }  50% {    text-shadow: #f1ee47 0 0 10px;  }  50% {    text-shadow: #b347f1 0 0 10px;  }  62.5% {    text-shadow: #002afa 0 0 10px;  }  75% {    text-shadow: #ed709b 0 0 10px;  }  87.5% {    text-shadow: #39c5bb 0 0 10px;  }  100% {    text-shadow: #5636ed 0 0 10px;  }}@keyframes light_5px {  0% {    text-shadow: #5636ed 0 0 5px;  }  12.5% {    text-shadow: #11ee5e 0 0 5px;  }  25% {    text-shadow: #f14747 0 0 5px;  }  37.5% {    text-shadow: #f1a247 0 0 15px;  }  50% {    text-shadow: #f1ee47 0 0 5px;  }  50% {    text-shadow: #b347f1 0 0 5px;  }  62.5% {    text-shadow: #002afa 0 0 5px;  }  75% {    text-shadow: #ed709b 0 0 5px;  }  87.5% {    text-shadow: #39c5bb 0 0 5px;  }  100% {    text-shadow: #5636ed 0 0 5px;  }}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/pageCard.css"/>
+      <url>/css/pageCard.css</url>
+      
+        <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.7);  --trans-dark: rgba(25, 25, 25, 0.65);  --border-style: 1px solid rgb(82, 82, 82);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}]]></content>
       
     </entry>
     
@@ -200,20 +249,9 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/pageCard.css"/>
-      <url>/css/pageCard.css</url>
-      
-        <content type="html"><![CDATA[:root {  --trans-light: rgba(255, 255, 255, 0.7);  --trans-dark: rgba(25, 25, 25, 0.65);  --border-style: 1px solid rgb(82, 82, 82);  --backdrop-filter: blur(5px) saturate(150%);}/* 首页文章卡片 */#recent-posts > .recent-post-item {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 25px;  border: var(--border-style);}/* 首页侧栏卡片 */#aside-content .card-widget {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border-radius: 18px;  border: var(--border-style);}/* 文章页、归档页、普通页面 */div#post,div#page,div#archive {  background: var(--trans-light);  backdrop-filter: var(--backdrop-filter);  border: var(--border-style);  border-radius: 20px;}/* 导航栏 */#page-header.nav-fixed #nav {  background: rgba(255, 255, 255, 0.75);  backdrop-filter: var(--backdrop-filter);}[data-theme="dark"] #page-header.nav-fixed #nav {  background: rgba(0, 0, 0, 0.7) !important;}/* 夜间模式遮罩 */[data-theme="dark"] #recent-posts > .recent-post-item,[data-theme="dark"] #aside-content .card-widget,[data-theme="dark"] div#post,[data-theme="dark"] div#archive,[data-theme="dark"] div#page {  background: var(--trans-dark);}/* 夜间模式页脚页头遮罩透明 */[data-theme="dark"] #footer::before {  background: transparent !important;}[data-theme="dark"] #page-header::before {  background: transparent !important;}/* 阅读模式 */.read-mode #aside-content .card-widget {  background: rgba(158, 204, 171, 0.5) !important;}.read-mode div#post {  background: rgba(158, 204, 171, 0.5) !important;}/* 夜间模式下的阅读模式 */[data-theme="dark"] .read-mode #aside-content .card-widget {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}[data-theme="dark"] .read-mode div#post {  background: rgba(25, 25, 25, 0.9) !important;  color: #ffffff;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/theSite/index.html"/>
-      <url>/theSite/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -233,20 +271,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
-      <link href="/js/myConsole.js"/>
-      <url>/js/myConsole.js</url>
+      <link href="/theSite/index.html"/>
+      <url>/theSite/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
